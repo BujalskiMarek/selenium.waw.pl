@@ -26,7 +26,7 @@ public class Mail {
             for (int i = 0; i < 3; i++) {
 
 
-                czekajka(driver, "//span[@title='"+email+"']");
+                czekajka(driver, "//span[@title='trener@selenium.waw.pl']");
                 driver.findElementById("rcmbtn107").click();
                 czekajka(driver, "//textarea[@name='_to']");
 
