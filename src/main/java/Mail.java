@@ -14,7 +14,7 @@ public class Mail {
 
             WebDriverManager.chromedriver().setup();
             ChromeDriver driver = new ChromeDriver();
-            driver.get("https://selenium.waw.pl/roundcube");
+            driver.get("http://213.108.152.199/roundcube");
 
             String email = "testerselenium@selenium.waw.pl";
             String password = "tester.selenium1";

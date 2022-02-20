@@ -11,9 +11,9 @@ public class Registration {
 
         WebDriverManager.chromedriver().setup();
         ChromeDriver driver = new ChromeDriver();
-        driver.get("https://selenium.waw.pl/");
+        driver.get("http://213.108.152.199/");
 
-        String username = "testerselenium";
+        String username = "testerselenium1";
         String password = "tester.selenium1";
 
         driver.findElementById("rcmloginuser").sendKeys(username);
@@ -25,7 +25,7 @@ public class Registration {
         new Select(driver.findElementByName("birthday-year")).selectByVisibleText("2000");
 
         driver.findElementByCssSelector("input[value='M']").click();
-        driver.findElementByName("phone").sendKeys("123456789");
+        driver.findElementByName("phone").sendKeys("060317090814");
         driver.findElementById("rcmloginsubmit").click();
 
         String message = driver.findElementByCssSelector(".notice").getText();
